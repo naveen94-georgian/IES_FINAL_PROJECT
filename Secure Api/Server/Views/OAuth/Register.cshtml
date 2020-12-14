@@ -1,0 +1,56 @@
+﻿@model string
+
+@{
+    var loginUrl = $"/OAuth/Authorize{Model}";
+    var registerUrl = $"/OAuth/Register{Model}";
+}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+        <form action="@registerUrl" method="post">
+
+            <div class="card mx-auto mt-4" style="width:400px">
+                <h5 class="card-header">Register Account</h5>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="mb-3">
+                            <label for="username" class="col-form-label">Username:</label>
+                            <input type="text" class="form-control" name="username" id="username"
+                                   placeholder="Enter Username" value="" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="col-form-label">Email:</label>
+                            <input type="text" class="form-control" name="email" id="email" value=""
+                                   placeholder="Enter Email" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="col-form-label">Password:</label>
+                            <input type="password" class="form-control" name="password" id="password" value=""
+                                   placeholder="Enter Password" />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-8">
+                            <button type="submit" class="btn btn-primary mb-3">Register</button>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="@loginUrl" class="float-right">Back to Login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>

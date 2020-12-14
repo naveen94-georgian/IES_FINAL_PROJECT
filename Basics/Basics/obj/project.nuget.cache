@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "avk6obdnZCe0qjhYEcGX/4ovDReq4skG0wnRDX6b61fKLli+fFn43mzFW9OyRxizW2y/ew2i6oDaKFX3hoff4g==",
+  "success": true,
+  "projectFilePath": "D:\\Code\\visualstudio\\final_proj\\Authentication\\Basics\\Basics.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\navee\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
+    "C:\\Users\\navee\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\navee\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.0.3\\microsoft.netcore.app.host.win-x64.3.0.3.nupkg.sha512",
+    "C:\\Users\\navee\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
